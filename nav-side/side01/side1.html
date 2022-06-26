@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="side1.css">
+    <!--Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <title>SIDEBAR 01</title>
+    <!--Icon-->
+    <link rel="shortcut icon" href="user.png" type="image/x-icon">
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>SIDE <span>01</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="https://github.com/iasmincirino" class="logout_btn" target="_blank" rel="external">GitHub</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="user.png" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="/nav01/index.html"><i class="fas fa-desktop"></i><span>NAV 01</span></a>
+        <a href="/nav02/nav2.html"><i class="fas fa-cogs"></i><span>NAV 02</span></a>
+        <a href="/side01/side1.html"><i class="fas fa-table"></i><span>SIDE 01</span></a>
+        <a href="/side02/side2.html"><i class="fas fa-th"></i><span>SIDE 02</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="user.png" class="profile_image" alt="">
+        <h4>Usuário</h4>
+      </div>
+      <a href="/nav01/index.html"><i class="fas fa-desktop"></i><span>NAV 01</span></a>
+      <a href="/nav02/nav2.html"><i class="fas fa-cogs"></i><span>NAV 02</span></a>
+      <a href="/side01/side1.html"><i class="fas fa-table"></i><span>SIDE 01</span></a>
+      <a href="/side02/side2.html"><i class="fas fa-th"></i><span>SIDE 02</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+      <div class="card">
+        <p> Tecnologias Usadas: <br><br>
+        <img class="img" alt="html5" src="https://img.shields.io/badge/HTML5-a01818?style=for-the-badge&logo=html5&logoColor=white" /> <br>
+        <img class="img" alt="css" src="https://img.shields.io/badge/CSS3-a01818?style=for-the-badge&logo=css3&logoColor=white" /> <br>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>

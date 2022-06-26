@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background: #b5f7b5;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #56b653;
+    position: fixed;
+    z-index: 2;
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 80px;
+    line-height: 80px;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #1e5c1c;
+    transition: .5s;
+}
+
+nav #icon{
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.git{
+    text-align: center;
+    background: #56b653;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+    border: solid 1px #fff;
+}
+
+.git:hover{
+    background: #1e5c1c;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 20px;
+        padding: 0 50px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+
+    nav a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 909px){
+    nav #icon{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #56b653a6;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    nav ul.show{
+        left: 0;
+    }
+}
+
+/* Card */
+
+.card{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section{
+    width: 350px;
+    height: 280px;
+    border: 2px solid #1e5c1c;
+    padding: 20px;
+    background: #f4f4f45e;
+    border-radius: 20px;
+  }
+
+  h2{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 300px) {
+    section {
+        width: 250px;
+    }
+  }
