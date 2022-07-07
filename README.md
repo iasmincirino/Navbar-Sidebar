@@ -1,6 +1,5 @@
 # Navbar-Sidebar
 Modelos diferentes e responsivos de Navbar e Sidebar <br>
-Link: https://navbar-sidebar.netlify.app/
 
 ### NAVBAR 01:
 <div style="display: inline_block">
